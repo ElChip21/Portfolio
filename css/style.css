@@ -1,0 +1,82 @@
+/* FONTS */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('woff2'),
+         url('../fonts/Roboto/Roboto-Light.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PARAM GENERAUX */
+* {
+    font-family: 'Roboto', 'sans-serif';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #11151d;
+}
+
+hr {
+    color: white;
+}
+
+
+
+/* HEADER */
+
+.bg-nav{
+    background-color: #11151d;
+}
+
+/* HOVER HEADER */
+
+
+.navbar-nav .nav-link {
+    color: #fff; /* Couleur de texte normale */
+    transition: color 0.3s ease; /* Transition de couleur sur 0.3s avec un effet de facilité */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #374158; /* Couleur de texte au survol */
+}
+
+/* IMAGE */
+#sectionImg {
+    position: relative;
+    height: 650px;
+    background: url("../img/img5.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Noir semi-transparent */
+    z-index: 1;
+}
+/* MAIN */
+
+#aProposSize{
+    font-size: xx-large;
+}
+
+/* CARD */
+.card {
+    background: none;
+    border: dashed #fff;
+    transition: background-color 1s ease, border 1s ease; 
+    width: 18rem;
+}
+
+.card:hover {
+    background-color: #374158;
+    border: solid #fff;
+}
+
+/* FOOTER */
+

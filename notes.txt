@@ -1,0 +1,342 @@
+   <header>
+<section>
+    
+    <div class=" header border-bottom justify-content-around">
+
+        <div>
+            <span class="spanHeader">Mon portfolio</span>
+        </div>
+        <div class="uppercase" >
+            <nav>
+                <ul class="d-flex">
+                     <li class="pli hover">
+                         <a href="#portfolio">portfolio</a>
+                     </li>
+         
+                     <li class="pli hover">
+                         <a href="#services">services</a>
+                     </li>
+         
+                     <li class="pli hover">
+                         <a href="#about">about</a>
+                     </li>
+         
+                     <li class="pli hover">
+                         <a href="#team">team</a>
+                     </li>
+         
+                     <li class="pli hover">
+                         <a href="#contact">contact</a>
+                     </li>
+                </ul> 
+             </nav>
+         
+        </div>
+    </div>
+
+
+</section>
+
+    
+    </header> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hr {
+    width: 15%;
+    margin: 1rem;
+}
+
+ul {
+    /* permet d'enlever les listes à puces */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-size: larger;
+    font-weight:bold ;
+    color: black;
+}
+
+
+.border {
+    border: 1px solid black;
+}
+.border-bottom {
+    border-bottom: 1px solid gray;
+}
+.btn {
+    
+        padding: 0.4rem 9.2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        color: black;
+        
+    
+}
+.btn2 {
+    background-color: dimgrey;
+    padding: 0.4rem 9.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: black;
+
+}
+.btn3 {
+    
+    padding: 0.4rem 14.3rem;
+   
+    color: black;
+    
+
+}
+/* flex */
+
+
+
+/* textes */
+
+.uppercase {
+    text-transform: uppercase;
+}
+/* Polices */
+.text {
+    font-size: 5em ;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bold {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* marges */
+
+.m1 {
+    margin: 1rem;
+}
+.mb-1 {
+
+    margin-bottom: 1rem;
+}
+.p1 {
+    padding: 1rem;
+}
+
+.p2 {
+    padding: 2rem;
+}
+.pr1 {
+    padding-right: 1rem;
+}
+.pl1 {
+    padding-left: 1rem;
+}
+.pl2 {
+    padding-left: 2rem;
+}
+.pl3 {
+    padding-left: 3rem;
+}
+.pl12 {
+    padding-left: 12rem;
+}
+.pb1 {
+    padding-bottom: 1rem;
+}
+.pt1 {
+    padding-top: 1rem;
+}
+.pt2 {
+    padding-top: 2rem;
+}
+.pb2 {
+    padding-bottom: 2rem;
+}
+
+.pli {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.prange {
+
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* tailles */
+
+.w-30 {
+    width: 30%;
+}
+.w-33-3 {
+    width: 33.3%;
+}
+.w-40 {
+    width: 40%;
+}
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* alignement */
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* BACKGROUND */
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-dark {
+    background-color: #1c1c1c;
+}
+
+.bg-light-grey {
+    background-color: rgba(255,255,255, 0.9);
+}
+
+.bg-dark-grey {
+    background-color: #373737;
+}
+
+.text-white {
+    color: white;
+}
+
+/* HOVER */
+
+/* CONTAINER */
+
+.container {
+    width: 650px;
+}
+
+/* HEADER */
+
+.spanHeader {
+
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.header {
+    
+    display: flex;
+    
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    position: fixed;
+    background-color: #FEE5FA;
+    align-items: center;
+    
+}
+
+
+
+
+
+#logo_part > div {
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+
+/* BACKGROUND */
+
+
+
+.bg-image {
+   
+    height: 700px;
+    
+    background: url("../img/img5.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bg-opacity {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 700px;
+
+
+}
+
+
+/* ARTICLES */
+
+#articles {
+    padding: 2rem 0;
+}
+
+
+
+
+
+/* LIGNES */
+ 
