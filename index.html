@@ -9,27 +9,26 @@
 </head>
 
 
-<!-- 
+<!--
             li*4+tab
         permet de faire 4 li instantanément
         -->
-        <!-- li*4>a+tab 
+        <!-- li*4>a+tab
         Permet de faire 4 li + lien -->
-       
+
 <body>
     <header>
 
-      
-        <nav class="navbar p-0 navbar-expand-lg bg-body-tertiary ">
+
+        <nav class="navbar p-0 navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid p-3 bg-nav">
-                <!-- Ajoutez ceci à l'intérieur de votre div container-fluid -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
 
-                
+
               <a class="navbar-brand text-light" href="#">Portfolio</a>
-           
+
               <div class="collapse  navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
@@ -46,53 +45,277 @@
             </div>
           </nav>
 
-    
+
     </header>
 
     <section class=" d-flex justify-content-center container-fluid" id="sectionImg">
-     
+      
 
         <div class="image-overlay d-flex justify-content-center">
 
             <div class=" d-flex align-items-center">
-                <div class="">
-                    
-                    <h1 class="text-white text-center">Sclavo Morgan</h1>
-                    <hr>
-                    
-                    <p class="text-white text-center">Etudiant en Développement Web et Web Mobile</p>
+                <div class="bg-transparent">
+
+                    <h1 class="text-white text-center">SCLAVO MORGAN</h1>
+                    <span><hr></span>
+
+                    <p class="p text-white text-center">Etudiant en Développement Web et Web Mobile</p>
                 </div>
-             
+
             </div>
         </div>
     </section>
-    <main class="container-fluid row">
-        <div class=" d-flex justify-content-center pt-3 col-12">
+    <main class="container-fluid">
+      <!-- SECTION A PROPOS -->
+      <section>
+
+        <div class="d-flex justify-content-center pt-3 col-12">
             <h2 class="text-light" id="aPropos">A propos</h2>
         </div>
-        <div class="pt-5 d-flex justify-content-around">
-            <div class="card rounded col-6 mb-5 col-md-12">
+
+
+        <div class="pt-5 ps-3 pe-3 flex-xs-column flex-sm-row align-items-sm-center justify-content-around row">
+            <div class="card image-overlay-card box col-md-12 mb-5">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+
                 <img src="img/Morgan.png" class="card-img-top" alt="Normally it's me">
-          
-              </div>
-              <div class="col-6 row align-items-center border shadow p-3 mb-5 bg-body rounded">
-                <p>
-                    Actuellement en formation diplômante Développeur Web et Web Mobile au sein de l'AFPA, en initial, je suis un jeune étudiant souhaitant se spécialisant dans le développement web et mobile. J’oriente mes études dans ce domaine, guidé par mon désir d'apprendre et ma curiosité. En tant que passionné, j’aime participer activement aux activités d’une entreprise, mais aussi créer des projets personnels, dans le but d'augmenter en compétences.</p>
+
+               </div>
+               <div class="flex-wrap col-xs-12 col-md-12 col-lg-6 row align-items-center border box-shadow p-3 mb-5 bg-light rounded">
+              
+                <nav class="navbar navbar-expand-lg justify-content-center">
+                  <ul class="navbar-nav flex-row mr-auto">
+                      <li class="nav-item p-2"><a onclick="handleNavigation('presentation')"  href="#presentation" class="nav-link navbar-link-color keepColor">Présentation</a></li>
+                      <li class="nav-item p-2"><a onclick="handleNavigation('langues')" href="#langues" class="nav-link navbar-link-color keepColor">Langues</a></li>
+                      <li class="nav-item p-2"><a onclick="handleNavigation('softSkills')" href="#softSkills" class="nav-link navbar-link-color keepColor">Soft skills</a></li>
+                      <li class="nav-item p-2"><a onclick="handleNavigation('passions')" href="#passions" class="nav-link navbar-link-color keepColor">Passions</a></li>
+
+                  </ul>
+              </nav>
+                <div class="content fixed-height" id="presentationContent">
+                  <h2>Présentation</h2>
+                  <p>
+                    Je m'appelle Sclavo Morgan et j'ai 21 ans. Actuellement en formation diplômante Développeur Web et Web Mobile au sein de l'AFPA, en initial, je suis un jeune étudiant souhaitant se spécialiser dans le développement web et mobile. J'oriente mes études dans ce domaine, guidé par mon désir d'apprendre et ma curiosité. En tant que passionné, j'aime participer activement aux activités d'une entreprise, mais aussi créer des projets personnels, dans le but d'augmenter en compétences.</p>
 
                     <p>Le développement web et mobile est apparu comme une évidence lors de mes formations, car en effet j'ai dejà effectué une formation PHP/MySQL au sein du GRETA.
-                    
+
                     Si vous souhaitez en apprendre plus sur moi, ou me contacter, n'hésitez plus, vous pouvez explorer ce site ou télécharger mon CV !
                 </p>
-                
+                </div>
+
+
+
+                <div class="content flex-wrap none" id="languesContent">
+                  <div class="col-12 text-center mb-5"><h2>Langues</h2></div>
+                  <div class="d-flex w-100 justify-content-around">
+                    <div>
+                      <img src="/img/france.jpg" alt="français" class="flagImage">
+                      <div>
+
+                          <h3>Français</h3>
+
+                          <h4><i>Langue maternelle</i></h4>
+
+
+                      </div>
+
+                    </div>
+
+
+                    <div>
+
+                      <img src="/img/anglais.jpg" alt="français" class="flagImage">
+
+                      <h3>Anglais</h3>
+
+                      <h4><i>Niveau B1</i></h4>
+
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+<div class="content fixed-height none" id="softSkillsContent">
+  <h2>Soft Skills</h2>
+
+
+   <p>
+    <b>Intelligence émotionnelle :</b> Je suis quelqu'un d'empathique, sympathique et toujours optimiste
+   </p>
+   <p><b>Intelligence relationnelle :</b> Esprit d'équipe, agit toujours pour maintenir une coopération positive, capable de raisonner au mieux
+   </p>
+    <p><b>Curiosité :</b> J'aime toujours en apprendre plus sur pleins de sujets </p>
+
+    <p><b>Capacité de résolution :</b> J'aime trouver la solution la plus simple pour répondre à un besoin, que ce soit seul ou en équipe, pour me ou nous permettre d'avancer vers le meilleur résultat </p>
+
+
+</div>
+
+<div class="content fixed-height none" id="passionsContent">
+  <h2>Passions</h2>
+  <p>
+    <b>Chant dans une chorale :</b> Je chante depuis un peu plus de 6 mois dans une chorale située à Mougins, j'ai eu l'occasion de participer à deux concerts avec notre petite troupe de 50 personnes, un à Nice, l'autre à Mougins.
+   </p>
+   <p><b>Passion pour la musique:</b> La musique, c'est ma bouffée d'air quotidienne. Du classique au jazz, en passant par la pop, je m'éclate à explorer tous les recoins de cet univers. Mon répertoire musical est très varié, et chaque jour est une nouvelle découverte.
+   </p>
+    <p><b>Série/films :</b> J'aime beaucoup me plonger dans une série ou film qui je sais me fera réfléchir, de grands classiques ou des genre de niches, je suis quelqu'un d'assez passionné par le cinéma en général, si je devais citer un film je dirais "her" de Spike Jonz, une série je dirais "Breaking Bad" de Vince Gilligan </p>
+
+
+</div>
+
+
+</div>
+
+      </section>
+
+
+
+<!-- SECTION COMPETENCES -->
+  <div class="d-flex justify-content-center pt-3 col-12">
+    <h2 class="text-light" id="skills">Mes compétences</h2>
+</div>
+
+
+  <div class=" p-5 container-fluid">
+    <div class="row">
+      <div class="col-md-4 p-1 col-sm-6">
+        <div class="competencesCard">
+          <div class="competencesCard-header">
+            <h2>Front-end</h2>
+          </div>
+          <div>
+            <div class="progressContainer">
+              <p class="progressLabel">HTML/CSS/JS</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
               </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">BOOTSTRAP</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">JQUERY</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">REACTJS</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          
+            <div class="progressContainer">
+              <p class="progressLabel">MOBILE RESPONSIVE</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
         </div>
-       
+      </div>
+      <div class="col-md-4 p-1 col-sm-6">
+        <div class="competencesCard">
+          <div class="competencesCard-header">
+            <h2>Back-end</h2>
+          </div>
+          <div>
+            <div class="progressContainer">
+              <p class="progressLabel">PHP/MySQL</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">PhpMyAdmin</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            
+            <div class="progressContainer">
+              <p class="progressLabel">WORKBENCH</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">LOOPING</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">MERISE</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 p-1 col-sm-6">
+        <div class="competencesCard">
+          <div class="competencesCard-header">
+            <h2>Autres</h2>
+          </div>
+          <div>
+            <div class="progressContainer">
+              <p class="progressLabel">WORD</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">POWERPOINT</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">CHATGPT</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">SCRUM</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="progressContainer">
+              <p class="progressLabel">GIT</p>
+              <div class="progress noOpacity">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     </main>
 
 
+
+<script src="js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
-   
+
 
 

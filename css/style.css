@@ -2,7 +2,10 @@
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto/Roboto-Medium.ttf') format('woff2'),
-         url('../fonts/Roboto/Roboto-Light.ttf') format('woff');
+         url('../fonts/Roboto/Roboto-Light.ttf') format('woff'),
+         url('../fonts/Roboto/Roboto-BlackItalic.ttf') format('ttf'),
+         url('../fonts/Roboto/Roboto-Italic.ttf') format('ttf'),
+         url('../fonts/Roboto/Roboto-LightItalic.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,14 +17,86 @@
     margin: 0;
     box-sizing: border-box;
 }
+ul,li{
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #11151d;
 }
 
+h1 {
+    font-size: 5rem;
+    background: linear-gradient(to right,rgb(0, 253, 232),rgb(107, 124, 224), rgb(0, 253, 232));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: fade 1s ease-in-out;
+    pointer-events: none;
+    opacity: 1;
+}
+.p {
+    font-size: 2.5rem;
+    background: linear-gradient(to right,rgb(0, 253, 232),rgb(107, 124, 224), rgb(0, 253, 232));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: fade 2s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+    pointer-events: none;
+    
+}
+
+
 hr {
     color: white;
 }
+/* KEYFRAMES */
 
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* CE QUI ENTOURE MA PHOTO */
+@keyframes animate {
+    0% {
+    transform:scaleX(0);
+    transform-origin: left;
+    }
+    50%
+    {
+      transform:scaleX(1);
+    transform-origin: left;
+    }
+    50.1%
+    {
+      transform:scaleX(1);
+    transform-origin: right;
+      
+    }
+    
+    100%
+    {
+      transform:scaleX(0);
+    transform-origin: right;
+      
+    }
+    
+    
+  } 
+
+.container-fluid-for-div{
+  padding-right: 0% !important;
+}
 
 
 /* HEADER */
@@ -34,20 +109,20 @@ hr {
 
 
 .navbar-nav .nav-link {
-    color: #fff; /* Couleur de texte normale */
-    transition: color 0.3s ease; /* Transition de couleur sur 0.3s avec un effet de facilité */
+    color: #fff; /* Couleur normale */
+    transition: color 0.3s ease; /* Transition de couleur sur 0.3s*/
 }
 
 .navbar-nav .nav-link:hover {
-    color: #374158; /* Couleur de texte au survol */
+    color: #374158; /* Couleur au survol */
 }
 
 /* IMAGE */
 #sectionImg {
     position: relative;
-    height: 650px;
+    height: 610px;
     background: url("../img/img5.jpg") no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
 }
 .image-overlay {
@@ -59,23 +134,142 @@ hr {
     background-color: rgba(0, 0, 0, 0.3); /* Noir semi-transparent */
     z-index: 1;
 }
+/* Drapeau image */
+.flagImage {
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 /* MAIN */
+/* A PROPOS */
+/* SECTION */
 
 #aProposSize{
     font-size: xx-large;
 }
 
-/* CARD */
-.card {
-    background: none;
-    border: dashed #fff;
-    transition: background-color 1s ease, border 1s ease; 
-    width: 18rem;
+/* BOX SHADOW */
+.box-shadow{
+    box-shadow: 10px 10px 10px black;
 }
 
-.card:hover {
-    background-color: #374158;
-    border: solid #fff;
+/* CARD */
+
+.card {
+position: relative;
+border: none;
+background: none;
+ 
+ width: 18rem;
+    
+    
+}
+
+  
+  .box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    
+  }
+  
+  
+  .box span:nth-child(1)
+  {
+    transform:rotate(0deg);
+  }
+  
+  .box span:nth-child(2)
+  {
+    transform:rotate(90deg);
+  }
+  
+  .box span:nth-child(3)
+  {
+    transform:rotate(180deg);
+  }
+  
+  .box span:nth-child(4)
+  {
+    transform:rotate(270deg);
+  }
+  
+  .box span:before
+  {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: #0084ff;
+    /* animation:  animate 3s linear infinite; */
+    animation:  3s linear infinite;
+  }
+  
+  
+/* GESTION DU TEXTE AFFICHER */
+/* nav */
+.navbar-link-color {
+  color: #374158 !important;  /* Couleur normale */
+  transition: color 0.3s ease; /* Transition de couleur sur 0.3s*/
+}
+
+.navbar-link-color:hover {
+  color:  #11151d !important; /* Couleur au survol */
+}
+.fixed-height {
+  max-height: 250px; 
+  overflow-y: auto; /*ça permet de rajouter une barre de défilement verticale*/
+}
+.none {
+    display: none;
+}
+.langues_style {
+    justify-content: center;
+    
+}
+
+/* MES COMPETENCES */
+.competencesCard-header {
+  background: rgba(250, 250, 250, 0.9);
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  padding: 10px 0;
+}
+.competencesCard {
+  background: #fff;
+  border-radius: 20px;
+  margin: 0px auto;
+  max-width: 300px;
+  padding-bottom: 1px;
+}
+/* Progress bar */
+.progress {
+  background: transparent;
+  border: solid var(--darkgrey-bg);
+  height: 40px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.noOpacity {
+  opacity: 0;
+}
+.progressContainer {
+  position: relative;
+  margin: 10px 6px;
+}
+.progressLabel {
+  line-height: 40px;
+  transition: 1s;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 20px;
 }
 
 /* FOOTER */
