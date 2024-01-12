@@ -26,24 +26,27 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #11151d;
+    background: rgb(31,31,31);
 }
 
 h1 {
     font-size: 5rem;
-    background: linear-gradient(to right,rgb(0, 253, 232),rgb(107, 124, 224), rgb(0, 253, 232));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #00000000;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+
+     
+
+    
 
     animation: fade 1s ease-in-out;
-    pointer-events: none;
-    opacity: 1;
+   
+    
 }
+
 .p {
     font-size: 2.5rem;
-    background: linear-gradient(to right,rgb(0, 253, 232),rgb(107, 124, 224), rgb(0, 253, 232));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:black; 
 
     animation: fade 2s ease-in-out forwards;
     opacity: 0;
@@ -94,15 +97,16 @@ hr {
     
   } 
 
-.container-fluid-for-div{
-  padding-right: 0% !important;
-}
+
 
 
 /* HEADER */
 
 .bg-nav{
-    background-color: #11151d;
+    background-color: rgb(31,31,31);
+}
+.bg-span{
+background-color: rgb(185,100,33);
 }
 
 /* HOVER HEADER */
@@ -120,10 +124,17 @@ hr {
 /* IMAGE */
 #sectionImg {
     position: relative;
-    height: 610px;
-    background: url("../img/img5.jpg") no-repeat;
+    height: 650px;
+    background: url("../img/abstract-blur-gradient-931360.jpeg") no-repeat;
     background-position: center;
     background-size: cover;
+}
+#sectionImg2 {
+  position: relative;
+  height: 100%;
+  background: url("../img/textures-treugolniki-geometriya-minimalizm-figuri-oranzhevii-chernii-70867.jpeg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .image-overlay {
     position: absolute;
@@ -131,7 +142,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Noir semi-transparent */
+    background-color: rgba(0, 0, 0, 0.0); /* Noir semi-transparent */
     z-index: 1;
 }
 /* Drapeau image */
@@ -144,7 +155,10 @@ hr {
 /* MAIN */
 /* A PROPOS */
 /* SECTION */
+.max-width-px{
+  max-width: 2000px;
 
+}
 #aProposSize{
     font-size: xx-large;
 }
@@ -157,15 +171,20 @@ hr {
 /* CARD */
 
 .card {
-position: relative;
-border: none;
-background: none;
- 
- width: 18rem;
-    
-    
+  position: relative;
+  border: none;
+  background: url(../img/artistic-retro_wave-low_poly-minimalist-mountain-903071.jpeg);
+  
+  background-position: center;
+  background-size: cover;
+  width: 18rem;
 }
 
+@media (min-width: 992px) {
+  .card {
+    margin-right: 5rem;
+  }
+}
   
   .box span{
     position: absolute;
@@ -234,6 +253,9 @@ background: none;
 }
 
 /* MES COMPETENCES */
+.max-width{
+  max-width: 2000px;
+}
 .competencesCard-header {
   background: rgba(250, 250, 250, 0.9);
   border-radius: 20px 20px 0 0;
@@ -270,6 +292,79 @@ background: none;
   top: 0;
   left: 5px;
   font-size: 20px;
+}
+/* PROJETS */
+.projetimg {
+  background-color:  rgba(0, 0, 0, 0.0);
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  max-width: 20rem;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+}
+.projetimg * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.projetimg img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.projetimg figcaption {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  -webkit-box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #0044ff;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.projetimg h3 {
+  background-color: #000000;
+  border: 2px solid rgb(63, 36, 75);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.projetimg a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.projetimg:hover img,
+.projetimg.hover img {
+  transform: scale(0.9);
+}
+
+.projetimg:hover figcaption,
+.projetimg.hover figcaption {
+  transform: translate(-50%, -50%) scale(1.2);
+  opacity: 1;
 }
 
 /* FOOTER */

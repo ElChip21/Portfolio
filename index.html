@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -23,7 +26,7 @@
         <nav class="navbar p-0 navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid p-3 bg-nav">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon bg-span"></span>
         </button>
 
 
@@ -39,6 +42,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#projects">Mes projets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -56,10 +62,10 @@
             <div class=" d-flex align-items-center">
                 <div class="bg-transparent">
 
-                    <h1 class="text-white text-center">SCLAVO MORGAN</h1>
+                    <h1 class="text-center">SCLAVO MORGAN</h1>
                     <span><hr></span>
 
-                    <p class="p text-white text-center">Etudiant en Développement Web et Web Mobile</p>
+                    <p class="p text-center">Etudiant en Développement Web et Web Mobile</p>
                 </div>
 
             </div>
@@ -74,26 +80,27 @@
         </div>
 
 
-        <div class="pt-5 ps-3 pe-3 flex-xs-column flex-sm-row align-items-sm-center justify-content-around row">
-            <div class="card image-overlay-card box col-md-12 mb-5">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+        <div class="pt-5 ps-3 pe-3 flex-xs-column flex-sm-row align-items-sm-center justify-content-center row">
+            <div class="card image-overlay-card box mr-sm-5 col-md-12 mb-5" id="sectionImg2">
+            
 
 
                 <img src="img/Morgan.png" class="card-img-top" alt="Normally it's me">
 
                </div>
-               <div class="flex-wrap col-xs-12 col-md-12 col-lg-6 row align-items-center border box-shadow p-3 mb-5 bg-light rounded">
+
+
+               <div class="flex-wrap max-width col-xs-12 col-md-12 col-lg-6 row align-items-center border box-shadow p-3 mb-5 bg-light rounded">
               
                 <nav class="navbar navbar-expand-lg justify-content-center">
                   <ul class="navbar-nav flex-row mr-auto">
                       <li class="nav-item p-2"><a onclick="handleNavigation('presentation')"  href="#presentation" class="nav-link navbar-link-color keepColor">Présentation</a></li>
+                      <li class="nav-item p-2"><a onclick="handleNavigation('infosPersos')" href="#infosPersos" class="nav-link navbar-link-color keepColor">Infos persos</a></li>
                       <li class="nav-item p-2"><a onclick="handleNavigation('langues')" href="#langues" class="nav-link navbar-link-color keepColor">Langues</a></li>
                       <li class="nav-item p-2"><a onclick="handleNavigation('softSkills')" href="#softSkills" class="nav-link navbar-link-color keepColor">Soft skills</a></li>
                       <li class="nav-item p-2"><a onclick="handleNavigation('passions')" href="#passions" class="nav-link navbar-link-color keepColor">Passions</a></li>
-
+                      
+                      
                   </ul>
               </nav>
                 <div class="content fixed-height" id="presentationContent">
@@ -107,7 +114,21 @@
                 </p>
                 </div>
 
-
+                <div class="content fixed-height none" id="infosPersosContent">
+                  <h2>Infos persos</h2>
+                
+                
+                   <p>
+                    <b>Email :</b> morgansclavo73@gmail.com
+                   </p>
+                   <p><b>GitHub :</b> <a href="https://github.com/ElChip21">Go to GitHub</a> 
+                   </p>
+                    <p><b>Linkedin :</b> <a href="https://www.linkedin.com/in/morgan-sclavo-032807214/">Go to Linkedin</a></p>
+                
+                    <p><b>Téléphone :</b> 06 01 15 43 48 </p>
+                
+                
+                </div>
 
                 <div class="content flex-wrap none" id="languesContent">
                   <div class="col-12 text-center mb-5"><h2>Langues</h2></div>
@@ -175,14 +196,14 @@
       </section>
 
 
-
+<hr>
 <!-- SECTION COMPETENCES -->
   <div class="d-flex justify-content-center pt-3 col-12">
     <h2 class="text-light" id="skills">Mes compétences</h2>
 </div>
 
 
-  <div class=" p-5 container-fluid">
+  <div class=" p-5 max-width container-fluid">
     <div class="row">
       <div class="col-md-4 p-1 col-sm-6">
         <div class="competencesCard">
@@ -307,11 +328,95 @@
       </div>
     </div>
   </div>
+<!-- PROJETS -->
+<hr>
+  <section>
+    <div class="d-flex justify-content-center pt-3 col-12">
+      <h2 class="text-light" id="projects">Projets</h2>
+  </div>
+    <div class="p-5 max-width container-fluid">
+    
+  <!-- projet 1   ////////////////////////////// -->
+<a name="projet"></a>
+     <div class="bg-navb d-flex flex-wrap justify-content-center">
+      <figure class="projetimg">
+        <img class="h-100" src="/img/maquette.png" alt="" />
+        <figcaption>
+          <h3>Projet palette</h3>
+        </figcaption>
+        <a href="https://elchip21.github.io/PaletteCouleurs/"></a>
+      </figure>
+      <figure class="projetimg">
+        <img class="h-100" src="/img/tv_show-squid_game-1043286.jpeg" alt="" />
+        <figcaption>
+          <h3>Squid Game en Javascript</h3>
+        </figcaption>
+        <a href="https://elchip21.github.io/SquidGame/"></a>
+      </figure>
+      <figure class="projetimg">
+        <img class="h-100" src="/img/music-barabani-barabannaya_ustanovka-muzikalnii_instrument-86982.jpeg" alt="" />
+        <figcaption>
+          <h3>jQuery en musique</h3>
+        </figcaption>
+        <a href=" https://elchip21.github.io/JavascriptMusique/"></a>
+      </figure>
+      <figure class="projetimg">
+        <img class=" h-100" src="/img/words-schaste-nashivka-nadpis-odezhda-ruki-chasi-155017.jpeg" alt=""/>
+        <figcaption>
+          <h3>SHOP PHP</h3>
+        </figcaption>
+        <a href="https://github.com/ElChip21/Shop-php.git"></a>
+      </figure>
+      <figure class="projetimg">
+        <img class="h-100" src="/img/abstract-colors-160791.jpeg" alt="" />
+        <figcaption>
+          <h3>AU CLICK</h3>
+        </figcaption>
+        <a href="https://elchip21.github.io/Chute-de-Cercles-en-Couleurs-jQuery-/"></a>
+      </figure>
+      <figure class="projetimg">
+        <img class="h-100" src="/img/wp4923992-react-js-wallpapers.png" alt="" />
+        <figcaption>
+          <h3>TODO LIST REACTJS</h3>
+        </figcaption>
+        <a href="https://github.com/ElChip21/TODO-LIST-REACTJS.git"></a>
+      </figure>
+      <figure class="projetimg">
+        <img class="h-100" src="/img/27282.jpg" alt="à venir!" />
+        <figcaption>
+          <h3>PROCHAINEMENT...</h3>
+        </figcaption>
+      </figure>
+   
+  </div>
+</section>
+<hr>
+<div class="d-flex justify-content-center pt-3 col-12">
+  <h2 class="text-light" id="contact">Contact</h2>
+</div>
+<div class="container">
+
+  <form id="contactForm">
+    <div class="mb-3">
+        <label for="name" class="form-label text-light">Name:</label>
+        <input type="text" class="form-control" required id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label text-light">Votre Email:</label>
+        <input type="email" class="form-control" required id="email" name="email" required>
+    </div>
+    
+    <div class="mb-3">
+        <label for="message" class="form-label text-light">Message:</label>
+        <textarea class="form-control" id="message" required name="message" rows="4" required></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="sendEmail()">Envoyer</button>
+  </form>
+</div>
 
     </main>
 
-
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="js/app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

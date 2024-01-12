@@ -14,13 +14,29 @@ function showContent(contentId) {
 
 }
 
-
-
 function handleNavigation(contentId) {
     showContent(contentId);
     
 }
 
+emailjs.init("qOUUknoJ4tT2TuC-8");
+
+function sendEmail() {
+    var data = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
+
+
+    emailjs.send("service_gshmmpu", "template_zxlaaa6", data)
+        .then(function (response) {
+            alert("gg good game:", response);
+        }, function (error) {
+            console.error("unlucky:", error);
+            alert(error);
+        });
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     // Set the default tab
