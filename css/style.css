@@ -31,9 +31,7 @@ body{
 
 h1 {
     font-size: 5rem;
-    color: #00000000;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+    color: black;
 
      
 
@@ -148,7 +146,7 @@ background-color: rgb(185,100,33);
 }
 .imageFond{
   position: absolute;
-  background: url("../img/undraw_Devices_re_dxae-removebg-preview.png") no-repeat;
+  background: url("../img/undraw_progressive_app_m9ms-removebg-preview.png") no-repeat;
   background-position: center;
 
 }
