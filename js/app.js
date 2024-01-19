@@ -19,6 +19,11 @@ function handleNavigation(contentId) {
     
 }
 
+function redirectToPage(button) {
+    let target = button.getAttribute('data-href');
+    location.href = target;
+}
+
 emailjs.init("qOUUknoJ4tT2TuC-8");
 
 function sendEmail() {
