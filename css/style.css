@@ -28,7 +28,9 @@ html{
 body{
     background: rgb(31,31,31);
 }
-
+a{
+  color: #000000;
+}
 h1 {
     font-size: 5rem;
     color: black;
@@ -67,36 +69,6 @@ hr {
         opacity: 1;
     }
 }
-/* CE QUI ENTOURE MA PHOTO */
-@keyframes animate {
-    0% {
-    transform:scaleX(0);
-    transform-origin: left;
-    }
-    50%
-    {
-      transform:scaleX(1);
-    transform-origin: left;
-    }
-    50.1%
-    {
-      transform:scaleX(1);
-    transform-origin: right;
-      
-    }
-    
-    100%
-    {
-      transform:scaleX(0);
-    transform-origin: right;
-      
-    }
-    
-    
-  } 
-
-
-
 
 /* HEADER */
 
@@ -104,7 +76,7 @@ hr {
     background-color: rgb(31,31,31);
 }
 .bg-span{
-background-color: rgb(185,100,33);
+background-color: rgb(218, 125, 38);
 }
 
 /* HOVER HEADER */
@@ -127,13 +99,42 @@ background-color: rgb(185,100,33);
   content: '';
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: rgb(196, 176, 0);
   display: block;
   transition: 0.5s;
 }
 
 #buttonHeader:hover::after, #buttonHeader:hover::before {
   width: 100%;
+}
+
+
+/* CV BUTTON */
+
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: '"roboto',sans-serif;
+ 
+  font-size: 17px;
+  padding: 0.5rem;
+  color: white;
+  background: none;
+  letter-spacing: 0.02em;
+  border-radius: 20em;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 5px;
+}
+
+.cssbuttons-io-button:hover {
+  border-color: white;
+  box-shadow: 0 0.5em 1.5em -0.5em rgb(0, 196, 10);
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em rgb(0, 196, 10);
 }
 
 /* IMAGE */
@@ -144,18 +145,34 @@ background-color: rgb(185,100,33);
     background-position: center;
     background-size: cover;
 }
-.imageFond{
+#imageFond{
   position: absolute;
   background: url("../img/undraw_progressive_app_m9ms-removebg-preview.png") no-repeat;
   background-position: center;
 
 }
 @media (max-width: 600px) {
-  .imageFond {
-    background-position: center;
+  #imageFond {
     background-size: contain;
 
   }
+}
+
+#imageFond2{
+
+  height: 200px;
+  background: url("../img/undraw_Accept_tasks_re_09mv-removebg-preview.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+#imageFond3{
+
+  height: 200px;
+  background: url("../img/undraw_Business_analytics_re_tfh3-removebg-preview.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+
 }
 
 #sectionImg2 {
@@ -278,10 +295,7 @@ button {
   transition-property: color;
 }
 
-button:focus,
-button:hover {
-  color: rgb(185,100,33);;
-}
+
 
 button:focus:after,
 button:hover:after {
@@ -297,7 +311,7 @@ button:after {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: rgb(185,100,33);
+  background-color: rgb(0, 196, 10);
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -332,29 +346,51 @@ button:after {
   padding-bottom: 1px;
 }
 /* Progress bar */
+
+
+.progress-bar {
+  width: 80%;
+  background-color: rgb(52, 61, 52);
+  color: #fff; 
+  position: relative;
+  z-index: 1; 
+}
 .progress {
   background: transparent;
   border: solid var(--darkgrey-bg);
   height: 40px;
   font-size: 20px;
-  transition: 1s;
+  transition: 0.6s;
+  position: relative; 
+  z-index: 2; 
 }
 
 .noOpacity {
   opacity: 0;
 }
+
 .progressContainer {
   position: relative;
   margin: 10px 6px;
 }
+
+
+.noOpacity:hover {
+
+  display: flex;
+  opacity: 1;
+  
+
+}
 .progressLabel {
   line-height: 40px;
-  transition: 1s;
   position: absolute;
   top: 0;
   left: 5px;
   font-size: 20px;
+  z-index: 2; 
 }
+
 /* PROJETS */
 .projetimg {
   background-color:  rgba(0, 0, 0, 0.0);
@@ -392,7 +428,7 @@ button:after {
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
   -webkit-box-shadow: 0 0 10px #000000;
-  box-shadow: 0 0 10px rgb(185,100,33);
+  box-shadow: 0 0 10px rgb(0, 196, 10);
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
@@ -432,10 +468,11 @@ button:after {
 /* FOOTER */
 
 /* FORM CONTACT */
+/* modification de form-control de bootstrap */
 
 .input {
   background-color: #212121;
-  
+  color: #fff;
   
   /* text-align: center; */
   border: 2px solid white;
@@ -444,16 +481,16 @@ button:after {
 }
 
 .input:focus {
-  color: rgb(0, 255, 255);
+  color: rgb(239, 234, 250);
   background-color: #212121;
-  outline-color: rgb(0, 255, 255);
-  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  outline-color: rgb(183, 245, 186);
+  box-shadow: -3px -3px 15px  rgb(183, 245, 186);
   transition: .1s;
   transition-property: box-shadow;
 }
 /* Button */
 .button {
-  --color:  rgb(243, 143, 67);
+  --color: rgba(51, 255, 0, 0.685);
   font-family: inherit;
   display: inline-block;
   width: 8em;
@@ -497,6 +534,7 @@ button:after {
  }
  
  .button:active:before {
-  background:  rgb(185,100,33);
+  background:  rgb(255, 145, 0);
   transition: background 0s;
  }
+ 

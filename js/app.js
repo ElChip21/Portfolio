@@ -27,7 +27,7 @@ function redirectToPage(button) {
 emailjs.init("qOUUknoJ4tT2TuC-8");
 
 function sendEmail() {
-    var data = {
+    let data = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
@@ -36,9 +36,9 @@ function sendEmail() {
 
     emailjs.send("service_gshmmpu", "template_zxlaaa6", data)
         .then(function (response) {
-            alert("gg good game:", response);
+            alert("Le mail a bien été envoyé", response);
         }, function (error) {
-            console.error("unlucky:", error);
+            console.error("erreur de l'envoi", error);
             alert(error);
         });
 }

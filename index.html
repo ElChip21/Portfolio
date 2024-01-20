@@ -45,6 +45,13 @@
                     <li class="nav-item">
                         <button class="text-light nav-link" data-href="#contact" onclick="redirectToPage(this)">Contact</button>
                     </li>
+                    <li class="nav-item">
+                      <a class="cssbuttons-io-button" href="CV MORGAN.png">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
+                        <span>Mon CV</span>
+                      </a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -56,7 +63,7 @@
 
 <section class=" d-flex justify-content-center container-fluid vh-100" id="sectionImg">      
 
-        <div class="image-overlay imageFond d-flex justify-content-center">
+        <div class="image-overlay d-flex justify-content-center" id="imageFond">
 
             <div class=" d-flex align-items-center">
                 <div class="bg-transparent">
@@ -114,7 +121,7 @@
 
                     <p>Le développement web et mobile est apparu comme une évidence lors de mes formations, car en effet j'ai dejà effectué une formation PHP/MySQL au sein du GRETA.
 
-                    Si vous souhaitez en apprendre plus sur moi, ou me contacter, n'hésitez plus, vous pouvez explorer ce site ou télécharger mon CV !
+                    Si vous souhaitez en apprendre plus sur moi, ou me contacter, n'hésitez plus, vous pouvez explorer ce site ou <a href="CV MORGAN.png">télécharger mon CV !</a>  
                 </p>
                 </div>
 
@@ -123,7 +130,7 @@
                 
                 
                    <p>
-                    <b>Email :</b> morgansclavo73@gmail.com
+                    <b>Email :</b> <a href="mailto:morgansclavopro@gmail.com">Cliquez ici pour m'envoyer un mail! </a>   (morgansclavopro@gmail.com) 
                    </p>
                    <p><b>GitHub :</b> <a href="https://github.com/ElChip21">Go to GitHub</a> 
                    </p>
@@ -194,7 +201,6 @@
 
 </div>
 
-
 </div>
 
       </section>
@@ -202,12 +208,14 @@
 
 <hr>
 <!-- SECTION COMPETENCES -->
-  <div class="d-flex justify-content-center pt-3 col-12">
+  <div class="d-flex justify-content-center pt-3 col-12" >
     <h2 class="text-light" id="skills">Mes compétences</h2>
 </div>
+<div id="imageFond2">
+</div>
 
-
-  <div class=" p-5 max-width container-fluid">
+  <div class=" p-5 max-width container-fluid" id="">
+    
     <div class="row">
       <div class="col-md-4 p-1 col-sm-6">
         <div class="competencesCard">
@@ -218,32 +226,37 @@
             <div class="progressContainer">
               <p class="progressLabel">HTML/CSS/JS</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width: 85%;">85 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">BOOTSTRAP</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" style="width: 80%;">80 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">JQUERY</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" style="width: 75%;">75 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">REACTJS</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="width: 50%;">50 %</div>
+
               </div>
             </div>
           
             <div class="progressContainer">
               <p class="progressLabel">MOBILE RESPONSIVE</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width: 85%;">85 %</div>
+
               </div>
             </div>
           </div>
@@ -258,32 +271,37 @@
             <div class="progressContainer">
               <p class="progressLabel">PHP/MySQL</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width: 85%;">85 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">PhpMyAdmin</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" style="width: 75%;">75 %</div>
+
               </div>
             </div>
             
             <div class="progressContainer">
               <p class="progressLabel">WORKBENCH</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" style="width: 70%;">70 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">LOOPING</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="width: 50%;">50 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">MERISE</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" style="width: 80%;">80 %</div>
+
               </div>
             </div>
           </div>
@@ -299,31 +317,36 @@
             <div class="progressContainer">
               <p class="progressLabel">WORD</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width: 85%;">85 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">POWERPOINT</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" style="width: 75%;">75 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">CHATGPT</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65" style="width: 65%;">65 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">SCRUM</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" style="width: 80%;">80 %</div>
+
               </div>
             </div>
             <div class="progressContainer">
               <p class="progressLabel">GIT</p>
               <div class="progress noOpacity">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" style="width: 70%;">70 %</div>
+
               </div>
             </div>
           
@@ -332,11 +355,14 @@
       </div>
     </div>
   </div>
+
 <!-- PROJETS -->
 <hr>
   <section>
     <div class="d-flex justify-content-center pt-3 col-12">
       <h2 class="text-light" id="projects">Projets</h2>
+  </div>
+  <div id="imageFond3">
   </div>
     <div class="p-5 max-width container-fluid">
     
@@ -410,7 +436,7 @@
 </div>
 <div class="container">
 
-  <form id="contactForm">
+  <form class="pb-5" id="contactForm">
     <div class="mb-3">
         <label for="name" class="form-label text-light">Name:</label>
         <input type="text" class="input form-control" required id="name" name="name" required>
