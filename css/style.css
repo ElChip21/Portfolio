@@ -119,9 +119,15 @@ background-color: rgb(218, 125, 38);
   font-size: 17px;
   padding: 0.5rem;
   color: white;
-  background: none;
+  background: rgb(223, 143, 77);
   letter-spacing: 0.02em;
   border-radius: 20em;
+}
+
+@media (max-width: 992px) {
+  .cssbuttons-io-button {
+   display: inline-flex;
+  }
 }
 
 .cssbuttons-io-button svg {
@@ -130,11 +136,11 @@ background-color: rgb(218, 125, 38);
 
 .cssbuttons-io-button:hover {
   border-color: white;
-  box-shadow: 0 0.5em 1.5em -0.5em rgb(0, 196, 10);
+  box-shadow: 0 0.5em 1.5em -0.5em rgb(223, 143, 77);
 }
 
 .cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em rgb(0, 196, 10);
+  box-shadow: 0 0.3em 1em -0.5em rgb(223, 143, 77);
 }
 
 /* IMAGE */
@@ -311,7 +317,7 @@ button:after {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: rgb(0, 196, 10);
+  background-color: rgb(223, 143, 77);
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -475,7 +481,7 @@ button:after {
   color: #fff;
   
   /* text-align: center; */
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 5px;
   /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
 }
@@ -483,14 +489,14 @@ button:after {
 .input:focus {
   color: rgb(239, 234, 250);
   background-color: #212121;
-  outline-color: rgb(183, 245, 186);
-  box-shadow: -3px -3px 15px  rgb(183, 245, 186);
+  outline-color:  rgb(223, 143, 77);
+  box-shadow: -3px -3px 15px   rgb(223, 143, 77);
   transition: .1s;
   transition-property: box-shadow;
 }
 /* Button */
 .button {
-  --color: rgba(51, 255, 0, 0.685);
+  --color: rgb(255, 176, 72);
   font-family: inherit;
   display: inline-block;
   width: 8em;
@@ -519,7 +525,7 @@ button:after {
  }
  
  .button:hover {
-  color: #fff;
+  color: black
  }
  
  .button:before {
@@ -534,7 +540,7 @@ button:after {
  }
  
  .button:active:before {
-  background:  rgb(255, 145, 0);
+  background:  rgb(223, 143, 77);
   transition: background 0s;
  }
  
