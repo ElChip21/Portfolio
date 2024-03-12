@@ -33,7 +33,7 @@ a{
 }
 h1 {
     font-size: 5rem;
-    color: black;
+    color: white;
 
      
 
@@ -46,7 +46,7 @@ h1 {
 
 .p {
     font-size: 2.5rem;
-    color:black; 
+    color:white; 
 
     animation: fade 2s ease-in-out forwards;
     opacity: 0;
