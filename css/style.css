@@ -34,15 +34,8 @@ a{
 h1 {
     font-size: 5rem;
     color: white;
-
-     
-
-    
-
     animation: fade 1s ease-in-out;
-   
-    
-}
+  }
 
 .p {
     font-size: 2.5rem;
@@ -76,7 +69,7 @@ hr {
     background-color: rgb(31,31,31);
 }
 .bg-span{
-background-color: rgb(202,80,67)
+background-color: rgb(147, 255, 123)
 }
 
 /* HOVER HEADER */
@@ -119,7 +112,7 @@ background-color: rgb(202,80,67)
   font-size: 17px;
   padding: 0.5rem;
   color: white;
-  background: rgb(223, 143, 77);
+  background: rgb(140, 251, 100);
   letter-spacing: 0.02em;
   border-radius: 20em;
 }
@@ -136,11 +129,11 @@ background-color: rgb(202,80,67)
 
 .cssbuttons-io-button:hover {
   border-color: white;
-  box-shadow: 0 0.5em 1.5em -0.5em rgb(202,80,67)
+  box-shadow: 0 0.5em 1.5em -0.5em rgb(88, 203, 104)
 }
 
 .cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em rgb(223, 143, 77);
+  box-shadow: 0 0.3em 1em -0.5em rgb(248, 204, 169);
 }
 
 /* IMAGE */
